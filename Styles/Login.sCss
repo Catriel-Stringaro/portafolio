@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+.header {
+    /*background-color: rgb(70, 5, 5);*/
+    background-color: #ffb367 ;
+}
+.header > img {
+    padding: 15px 15px;
+    height: 50px;
+    width: 50px;
+}
+.login{
+    background-color:#ffe277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    min-height: calc(100vh - 200px) ;/*no importa el alto de la pantalla siempre va a tener este valor*/
+}
+.login__container{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    min-height: 600px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.TextLogin{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    background-color: transparent;
+    border-bottom: 1px solid rgb(131, 131, 131);
+    border-top: 0px ;
+    border-left: 0px ;
+    border-right: 0px;
+    margin-bottom: 0px 10px;
+    outline: none;
+    height: 60px;
+    
+}
+.button{
+    background-color: rgba(148, 147, 147, 0.3);
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 25px;
+    color: black;
+    margin-bottom: 10px ;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.login__container--conditions-a {
+    text-decoration: none;
+    color: black;
+}
+.login__container--conditions-a:hover{
+    text-decoration: underline;
+}
+.login__container--Social-media > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.login__container--Social-media > div > img {
+    height: 50px;
+    width: 50px;
+}
+.login__recover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login__recover > a {
+    text-decoration: none;
+    color: black;
+}
+.login__recover > a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.footer{
+    margin: 0px;
+    padding: 20px;
+    background-color: #ffe2bc;
+}
+.footer > a{
+color: black;
+}
+.footer > a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width:100%;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
